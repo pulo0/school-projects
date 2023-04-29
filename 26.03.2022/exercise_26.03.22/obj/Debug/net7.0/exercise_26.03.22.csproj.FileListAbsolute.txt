@@ -1,0 +1,15 @@
+D:\Clips\26.03.2022\exercise_26.03.22\bin\Debug\net7.0\exercise_26.03.22.exe
+D:\Clips\26.03.2022\exercise_26.03.22\bin\Debug\net7.0\exercise_26.03.22.deps.json
+D:\Clips\26.03.2022\exercise_26.03.22\bin\Debug\net7.0\exercise_26.03.22.runtimeconfig.json
+D:\Clips\26.03.2022\exercise_26.03.22\bin\Debug\net7.0\exercise_26.03.22.dll
+D:\Clips\26.03.2022\exercise_26.03.22\bin\Debug\net7.0\exercise_26.03.22.pdb
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\exercise_26.03.22.csproj.AssemblyReference.cache
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\exercise_26.03.22.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\exercise_26.03.22.AssemblyInfoInputs.cache
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\exercise_26.03.22.AssemblyInfo.cs
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\exercise_26.03.22.csproj.CoreCompileInputs.cache
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\exercise_26.03.22.dll
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\refint\exercise_26.03.22.dll
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\exercise_26.03.22.pdb
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\exercise_26.03.22.genruntimeconfig.cache
+D:\Clips\26.03.2022\exercise_26.03.22\obj\Debug\net7.0\ref\exercise_26.03.22.dll

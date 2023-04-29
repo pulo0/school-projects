@@ -1,0 +1,15 @@
+D:\Clips\02.04.2022\exercise1_02.04.22\bin\Debug\net7.0\exercise1_02.04.22.exe
+D:\Clips\02.04.2022\exercise1_02.04.22\bin\Debug\net7.0\exercise1_02.04.22.deps.json
+D:\Clips\02.04.2022\exercise1_02.04.22\bin\Debug\net7.0\exercise1_02.04.22.runtimeconfig.json
+D:\Clips\02.04.2022\exercise1_02.04.22\bin\Debug\net7.0\exercise1_02.04.22.dll
+D:\Clips\02.04.2022\exercise1_02.04.22\bin\Debug\net7.0\exercise1_02.04.22.pdb
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\exercise1_02.04.22.csproj.AssemblyReference.cache
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\exercise1_02.04.22.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\exercise1_02.04.22.AssemblyInfoInputs.cache
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\exercise1_02.04.22.AssemblyInfo.cs
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\exercise1_02.04.22.csproj.CoreCompileInputs.cache
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\exercise1_02.04.22.dll
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\refint\exercise1_02.04.22.dll
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\exercise1_02.04.22.pdb
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\exercise1_02.04.22.genruntimeconfig.cache
+D:\Clips\02.04.2022\exercise1_02.04.22\obj\Debug\net7.0\ref\exercise1_02.04.22.dll
