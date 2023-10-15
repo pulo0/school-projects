@@ -23,6 +23,30 @@ button {
     box-shadow: 0 0 40px 1px rgb(96, 243, 194);
 }
 
+.red {
+    background-color: #971010 !important;    
+    color: #ffffff !important;
+    font-weight: lighter !important;
+}
+
+.green {
+    background-color: #2b9710 !important;   
+    color: #ffffff !important; 
+    font-weight: lighter !important;
+}
+
+.blue {
+    background-color: #101997 !important;  
+    color: #ffffff !important;  
+    font-weight: lighter !important;
+}
+
+.magenta {
+    background-color: #97105a !important;  
+    color: #ffffff !important;  
+    font-weight: lighter !important;
+}
+
 .clear {
     box-shadow: 0 0 40px 1px rgb(243, 96, 96);
     background-color: #f36060;

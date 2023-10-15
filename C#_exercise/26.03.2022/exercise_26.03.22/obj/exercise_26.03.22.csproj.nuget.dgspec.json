@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\exercise_26.03.22.csproj": {}
+    "D:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\exercise_26.03.22.csproj": {}
   },
   "projects": {
-    "d:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\exercise_26.03.22.csproj": {
+    "D:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\exercise_26.03.22.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\exercise_26.03.22.csproj",
+        "projectUniqueName": "D:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\exercise_26.03.22.csproj",
         "projectName": "exercise_26.03.22",
-        "projectPath": "d:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\exercise_26.03.22.csproj",
+        "projectPath": "D:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\exercise_26.03.22.csproj",
         "packagesPath": "C:\\Users\\barte\\.nuget\\packages\\",
-        "outputPath": "d:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\obj\\",
+        "outputPath": "D:\\Git\\school-projects\\C#_exercise\\26.03.2022\\exercise_26.03.22\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\barte\\AppData\\Roaming\\NuGet\\NuGet.Config"
