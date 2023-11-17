@@ -16,7 +16,7 @@
                 <th>name</th>
             </tr>
             <tr>
-                <td><input type='text' name='id' value='$record[id]'></td>
+                <td><input type='text' name='id' value='$record[id] readonly'></td>
                 <td><input type='text' name='surname' value='$record[surname]'></td>
                 <td><input type='text' name='name' value='$record[name]'></td>
             </tr>
