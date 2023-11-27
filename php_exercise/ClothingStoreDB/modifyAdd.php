@@ -23,5 +23,5 @@ if(isset($dostepny)) {
 } 
 $con -> close();
 
-header("Location: pokaz.php")
+header("Location: viewData.php")
 ?>

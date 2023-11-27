@@ -8,7 +8,7 @@
     $con -> close();
 
     while ($record = $result -> fetch_assoc()) {
-        echo "<form method='POST' action='modyfikujdodaj.php?id=$id'>";
+        echo "<form method='POST' action='modifyAdd.php?id=$id'>";
         echo "<table>
             <tr>
                 <th>id</th>

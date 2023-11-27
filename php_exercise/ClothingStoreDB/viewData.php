@@ -49,7 +49,7 @@
         align-items: center;
     }
 
-    .dodaj {
+    .add {
         box-shadow: inset 0 0 40px 1px grey;
         color: #54b3d6;
         border-radius: 0.3em;
@@ -58,12 +58,12 @@
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
 
-    .dodaj:hover {
+    .add:hover {
         color: #fff;
         box-shadow: inset 200px 0 0 0 purple;
     }    
     
-    .dodaj {
+    .add {
         color: black;
         font-family: 'Nova Mono', monospace;
         font-size: 35px;
@@ -73,7 +73,7 @@
 
 </style>
 
-<h1 style="text-align: center;">Baza_odzież</h1>
+<h1 style="text-align: center;">ClothingStore_DB</h1>
 
 <?php
 
@@ -115,4 +115,4 @@ while (($col = $result -> fetch_assoc())) {
 
 ?>
 
-<h2><a href="dodajform.html" class="dodaj">Dodaj dane</a></h2>
+<h2><a href="addDataForm.html" class="add">Add data</a></h2>

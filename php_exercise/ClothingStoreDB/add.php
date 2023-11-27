@@ -21,5 +21,5 @@ if(isset($dostepny)) {
 
 $con -> close();
 
-header("Location: dodajform.html");
+header("Location: addDataForm.html");
 ?>

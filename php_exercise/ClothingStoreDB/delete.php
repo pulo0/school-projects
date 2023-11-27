@@ -7,6 +7,6 @@ or die("die");
 $con -> query("delete from sklep_odziezowy where id=$id");
 $con -> close();
 
-header("Location: pokaz.php");
+header("Location: viewData.php");
 
 ?>
