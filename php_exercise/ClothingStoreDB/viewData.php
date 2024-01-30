@@ -77,36 +77,36 @@
 
 <?php
 
-$con = new mysqli('127.0.0.1', 'root', '', 'baza_odziez')
-or die("died on baza");
+$con = new mysqli('127.0.0.1', 'root', '', 'clothing_store')
+or die("error encounter on syncing to DB");
 
-$result = $con -> query("select * from sklep_odziezowy")
-or die("second breaking");
+$result = $con -> query("select * from clothing_store")
+or die("break in result query");
 
 echo " 
     <table>
         <th class='first'>Identyfikator</th>
-        <th>Marka</th>
-        <th>Płeć</th>
-        <th>Rozmiar</th>
-        <th>Rodzaj</th>
-        <th>Cena</th>
+        <th>brand</th>
+        <th>gender</th>
+        <th>size</th>
+        <th>type</th>
+        <th>price</th>
         <th>Dostępny</th>
         <th>Usuwanie</th>
         <th class='last'>Modyfikowanie</th>
 ";
 
 while (($col = $result -> fetch_assoc())) {
-    $kiedyDostepny = $col['dostepny'] ? "Dostępny" : "Niedostępny";
+    $kiedyavailable = $col['available'] ? "Dostępny" : "Niedostępny";
     echo "
         <tr>
         <td>$col[id]</td>
-        <td>$col[marka]</td>
-        <td>$col[plec]</td>
-        <td>$col[rozmiar]</td>
-        <td>$col[rodzaj]</td>
-        <td>$col[cena]</td>
-        <td>$kiedyDostepny</td>
+        <td>$col[brand]</td>
+        <td>$col[gender]</td>
+        <td>$col[size]</td>
+        <td>$col[type]</td>
+        <td>$col[price]</td>
+        <td>$kiedyavailable</td>
         <td><a href='usun.php?id=$col[id]'>usuń</a></td>
         <td><a href='modyfikuj.php?id=$col[id]'>modyfikuj</a></td>
         </tr><br>

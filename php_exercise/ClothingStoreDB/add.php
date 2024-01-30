@@ -1,22 +1,22 @@
 <?php
 
 $con = new mysqli('127.0.0.1', 'root', '', 'baza_odziez')
-or die("nope, not this one");
+or die("error encounter on syncing to DB");
 
-$marka = $_POST['marka'];
-$plec = $_POST['plec'];
-$rozmiar = $_POST['rozmiar'];
-$rodzaj = $_POST['rodzaj'];
-$cena = $_POST['cena'];
-$dostepny = $_POST['dostepny'];
+$brand = $_POST['brand'];
+$gender = $_POST['gender'];
+$size = $_POST['size'];
+$type = $_POST['type'];
+$price = $_POST['price'];
+$available = $_POST['available'];
 
 
-if(isset($dostepny)) {
-    $con -> query("insert into sklep_odziezowy values(null, '$marka', '$plec', '$rozmiar', '$rodzaj', '$cena', '1')")
-      or die("u died at 1");
+if(isset($available)) {
+    $con -> query("insert into clothing_store values(null, '$brand', '$gender', '$size', '$type', '$price', '1')")
+      or die("error encounter at query at true");
 } else {
-    $con -> query("insert into sklep_odziezowy values(null, '$marka', '$plec', '$rozmiar', '$rodzaj', '$cena', '0')")
-    or die("u died at 0");
+    $con -> query("insert into clothing_store values(null, '$brand', '$gender', '$size', '$type', '$price', '0')")
+    or die("error encounter at query at false");
 } 
 
 $con -> close();

@@ -1,24 +1,24 @@
 <?php
 $id = $_GET['id'];
-$marka = $_POST['marka'];
-$plec = $_POST['plec'];
-$rozmiar = $_POST['rozmiar'];
-$rodzaj = $_POST['rodzaj'];
-$cena = $_POST['cena'];
-$dostepny = $_POST['dostepny'];
+$brand = $_POST['brand'];
+$gender = $_POST['gender'];
+$size = $_POST['size'];
+$type = $_POST['type'];
+$price = $_POST['price'];
+$available = $_POST['available'];
 
-$con = new mysqli('127.0.0.1', 'root', '', 'baza_odziez') or die ("error");
-$con -> query("update sklep_odziezowy set marka='$marka' where id='$id'") or die ("error q2");
-$con -> query("update sklep_odziezowy set plec='$plec' where id='$id'") or die ("error q3");
-$con -> query("update sklep_odziezowy set rozmiar='$rozmiar' where id='$id'") or die ("error q4");
-$con -> query("update sklep_odziezowy set rodzaj='$rodzaj' where id='$id'") or die ("error q5");
-$con -> query("update sklep_odziezowy set cena='$cena' where id='$id'") or die ("error q6");
+$con = new mysqli('127.0.0.1', 'root', '', 'baza_odziez') or die ("error encounter on syncing to DB");
+$con -> query("update clothing_store set brand='$brand' where id='$id'") or die ("error q2");
+$con -> query("update clothing_store set gender='$gender' where id='$id'") or die ("error q3");
+$con -> query("update clothing_store set size='$size' where id='$id'") or die ("error q4");
+$con -> query("update clothing_store set type='$type' where id='$id'") or die ("error q5");
+$con -> query("update clothing_store set price='$price' where id='$id'") or die ("error q6");
 
-if(isset($dostepny)) {
-    $con -> query("update sklep_odziezowy set dostepny='1' where id='$id'")
+if(isset($available)) {
+    $con -> query("update clothing_store set available='1' where id='$id'")
     or die("u died at 1");
 } else {
-    $con -> query("update sklep_odziezowy set dostepny='0' where id='$id'")
+    $con -> query("update clothing_store set available='0' where id='$id'")
     or die("u died at 0");
 } 
 $con -> close();

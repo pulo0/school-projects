@@ -1,9 +1,9 @@
 <?php
     $con = new mysqli('127.0.0.1', 'root', '', 'baza_odziez')
-    or die("you died on start");
+    or die("error encounter on syncing to DB");
 
     $id = $_GET['id'];
-    $result = $con -> query("select * from sklep_odziezowy where id=$id")
+    $result = $con -> query("select * from clothing_store where id=$id")
     or die("you died");
     $con -> close();
 
@@ -12,21 +12,21 @@
         echo "<table>
             <tr>
                 <th>id</th>
-                <th>marka</th>
-                <th>plec</th>
-                <th>rozmiar</th>
-                <th>rodzaj</th>
-                <th>cena</th>
-                <th>dostepny</th>
+                <th>brand</th>
+                <th>gender</th>
+                <th>size</th>
+                <th>type</th>
+                <th>price</th>
+                <th>available</th>
             </tr>
             <tr?>
                 <td><input type='text' name='id' value='$record[id]'readonly></td>
-                <td><input type='text' name='marka' value='$record[marka]'></td>
-                <td><input type='text' name='plec' value='$record[plec]'></td>
-                <td><input type='text' name='rozmiar' value='$record[rozmiar]'></td>
-                <td><input type='text' name='rodzaj' value='$record[rodzaj]'></td>
-                <td><input type='number' min='0' step='0.01' name='cena' value='$record[cena]'></td>
-                <td><input type='checkbox' name='dostepny' value='$record[dostepny]'></td>
+                <td><input type='text' name='brand' value='$record[brand]'></td>
+                <td><input type='text' name='gender' value='$record[gender]'></td>
+                <td><input type='text' name='size' value='$record[size]'></td>
+                <td><input type='text' name='type' value='$record[type]'></td>
+                <td><input type='number' min='0' step='0.01' name='price' value='$record[price]'></td>
+                <td><input type='checkbox' name='available' value='$record[available]'></td>
             </tr>
         ";
     }
