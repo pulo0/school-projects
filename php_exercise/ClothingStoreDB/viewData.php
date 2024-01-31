@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="CSS/viewStyle.css">
 <h1>Clothing Store Database</h1>
+<h2><a href="addDataForm.html" class="add">Add</a></h2>
 
 <?php
 
@@ -35,10 +36,8 @@ while (($col = $result -> fetch_assoc())) {
         <td>$whenAvailablevailable</td>
         <td><a href='delete.php?id=$col[id]'>Delete</a></td>
         <td><a href='modify.php?id=$col[id]'>Modify</a></td>
-        </tr><br>
+        </tr>
     ";
 }
 
 ?>
-
-<h2><a href="addDataForm.html" class="add">Add</a></h2>
