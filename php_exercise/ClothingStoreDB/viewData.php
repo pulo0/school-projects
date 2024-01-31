@@ -43,7 +43,7 @@
         color: white;   
     }
 
-    h2 {
+    h1, h2 {
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -73,7 +73,7 @@
 
 </style>
 
-<h1 style="text-align: center;">ClothingStore_DB</h1>
+<h1>Clothing Store Database</h1>
 
 <?php
 
@@ -85,19 +85,19 @@ or die("break in result query");
 
 echo " 
     <table>
-        <th class='first'>Identyfikator</th>
-        <th>brand</th>
-        <th>gender</th>
-        <th>size</th>
-        <th>type</th>
-        <th>price</th>
-        <th>Dostępny</th>
-        <th>Usuwanie</th>
-        <th class='last'>Modyfikowanie</th>
+        <th class='first'>ID</th>
+        <th>Brand</th>
+        <th>Gender</th>
+        <th>Size</th>
+        <th>Type</th>
+        <th>Price</th>
+        <th>Available</th>
+        <th>Delete</th>
+        <th class='last'>Modification</th>
 ";
 
 while (($col = $result -> fetch_assoc())) {
-    $kiedyavailable = $col['available'] ? "Dostępny" : "Niedostępny";
+    $whenAvailablevailable = $col['available'] ? "Available" : "Unavailable";
     echo "
         <tr>
         <td>$col[id]</td>
@@ -106,13 +106,13 @@ while (($col = $result -> fetch_assoc())) {
         <td>$col[size]</td>
         <td>$col[type]</td>
         <td>$col[price]</td>
-        <td>$kiedyavailable</td>
-        <td><a href='usun.php?id=$col[id]'>usuń</a></td>
-        <td><a href='modyfikuj.php?id=$col[id]'>modyfikuj</a></td>
+        <td>$whenAvailablevailable</td>
+        <td><a href='delete.php?id=$col[id]'>Delete</a></td>
+        <td><a href='modify.php?id=$col[id]'>Modify</a></td>
         </tr><br>
     ";
 }
 
 ?>
 
-<h2><a href="addDataForm.html" class="add">Add data</a></h2>
+<h2><a href="addDataForm.html" class="add">Add</a></h2>

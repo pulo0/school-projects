@@ -1,10 +1,10 @@
 <?php
-    $con = new mysqli('127.0.0.1', 'root', '', 'baza_odziez')
+    $con = new mysqli('127.0.0.1', 'root', '', 'clothing_store')
     or die("error encounter on syncing to DB");
 
     $id = $_GET['id'];
     $result = $con -> query("select * from clothing_store where id=$id")
-    or die("you died");
+    or die("error on result query");
     $con -> close();
 
     while ($record = $result -> fetch_assoc()) {

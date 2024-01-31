@@ -7,7 +7,7 @@ $type = $_POST['type'];
 $price = $_POST['price'];
 $available = $_POST['available'];
 
-$con = new mysqli('127.0.0.1', 'root', '', 'baza_odziez') or die ("error encounter on syncing to DB");
+$con = new mysqli('127.0.0.1', 'root', '', 'clothing_store') or die ("error encounter on syncing to DB");
 $con -> query("update clothing_store set brand='$brand' where id='$id'") or die ("error q2");
 $con -> query("update clothing_store set gender='$gender' where id='$id'") or die ("error q3");
 $con -> query("update clothing_store set size='$size' where id='$id'") or die ("error q4");

@@ -1,6 +1,6 @@
 <?php
 
-$con = new mysqli('127.0.0.1', 'root', '', 'baza_odziez')
+$con = new mysqli('127.0.0.1', 'root', '', 'clothing_store')
 or die("error encounter on syncing to DB");
 
 $brand = $_POST['brand'];
