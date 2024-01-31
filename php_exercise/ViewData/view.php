@@ -4,7 +4,7 @@
     or die('You broke the database');
 
     $result = $con -> query("select * from class")
-    or die("second broke it");
+    or die("break in result query");
     $con -> close();
     while(($col = $result -> fetch_assoc()) !== null) {
         echo "

@@ -4,7 +4,7 @@
 
     $id = $_GET["id"];
     $result = $con -> query("select * from class where id=$id")
-    or die("yup, i fcked up");
+    or die("break in result query");
     $con -> close();
 
     while($record = $result -> fetch_assoc()) {

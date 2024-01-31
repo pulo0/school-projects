@@ -20,11 +20,14 @@ CREATE TABLE `clothing_store` (
 
 LOCK TABLES `clothing_store` WRITE;
 INSERT INTO `clothing_store` VALUES
-(1,'Medicine','Man','L','Pants',90.99,1),
-(2,'Medicine','Child','M','Addons',59.99,1),
-(3,'Gucci','Woman','XS','T-shirts',354.99,1),
-(4,'MarStocks','Dived','XXL','Jackets/Coats',90.99,0),
-(5,'NiceDrive','Dived','XS','Jackets/Coats',89.99,1),
-(6,'JackteMans','Man','M','Jackets/Coats',91.99,1),
-(7,'MyBady','Child','S','Underwear',15.99,1);
+(NULL,'Medicine','Man','L','Pants',90.99,1),
+(NULL,'Medicine','Child','M','Addons',59.99,1),
+(NULL,'Gucci','Woman','XS','T-shirts',354.99,1),
+(NULL,'MarStocks','Dived','XXL','Jackets/Coats',90.99,0),
+(NULL,'FlY','Child','S','T-shirts',15.99,1)
+(NULL,'NiceDrive','Dived','XS','Jackets/Coats',89.99,1),
+(NULL,'JackteMans','Man','M','Jackets/Coats',91.99,1),
+(NULL,'MyBady','Child','S','Underwear',15.99,1)
+(NULL, 'A.P.C','Man','L','Pants',18.99,0)
+(NULL, 'Beyond Yoga','Woman','A', , ,)
 UNLOCK TABLES;
