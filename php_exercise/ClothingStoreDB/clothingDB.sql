@@ -20,11 +20,11 @@ CREATE TABLE `clothing_store` (
 
 LOCK TABLES `clothing_store` WRITE;
 INSERT INTO `clothing_store` VALUES
-(1,'Medicine','Mężczyzna','L','Spodnie',90.99,1),
-(2,'Medicine','Dziecko','M','Dodatki',59.99,1),
-(3,'Gucci','Kobieta','XS','Koszulki',354.99,1),
-(4,'MarekStonks','Dived','XXL','Kurtki/Płaszcze',90.99,0),
-(5,'AleJazda','Dived','XS','Kurtki/Płaszcze',89.99,1),
-(6,'Płaszczowicze','Mężczyzna','M','Kurtki/Płaszcze',91.99,1),
-(7,'MyBady','Dziecko','S','Bielizna',15.99,1);
+(1,'Medicine','Man','L','Pants',90.99,1),
+(2,'Medicine','Child','M','Addons',59.99,1),
+(3,'Gucci','Woman','XS','T-shirts',354.99,1),
+(4,'MarStocks','Dived','XXL','Jackets/Coats',90.99,0),
+(5,'NiceDrive','Dived','XS','Jackets/Coats',89.99,1),
+(6,'JackteMans','Man','M','Jackets/Coats',91.99,1),
+(7,'MyBady','Child','S','Underwear',15.99,1);
 UNLOCK TABLES;
