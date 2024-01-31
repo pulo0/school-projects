@@ -21,16 +21,16 @@ CREATE TABLE `clothing_store` (
 
 -- Template for a INSERT TABLES data
 -- (NULL,'','','','',00.00,0)
--- Feel free to copy :)
+-- Feel free to copy :x
 
 LOCK TABLES `clothing_store` WRITE;
 INSERT INTO `clothing_store` VALUES
 (NULL,'Medicine','Man','L','Pants',90.99,1),
 (NULL,'Medicine','Child','M','Addons',59.99,1),
 (NULL,'Gucci','Woman','XS','T-shirts',354.99,1),
-(NULL,'MarStocks','Dived','XXL','Jackets/Coats',90.99,0),
+(NULL,'MarStocks','Divided','XXL','Jackets/Coats',90.99,0),
 (NULL,'FlY','Child','S','T-shirts',15.99,1),
-(NULL,'NiceDrive','Dived','XS','Jackets/Coats',89.99,1),
+(NULL,'NiceDrive','Divided','XS','Jackets/Coats',89.99,1),
 (NULL,'JackteMans','Man','M','Jackets/Coats',91.99,1),
 (NULL,'MyBady','Child','S','Underwear',15.99,1),
 (NULL,'A.P.C','Man','L','Pants',18.99,0),
