@@ -3,10 +3,10 @@ body {
     background-color: rgb(141, 95, 141);
 }
 table {
-    table-layout: fixed;
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    opacity: 20%;
 }
 
 table td {
@@ -52,6 +52,7 @@ h1, h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .add {

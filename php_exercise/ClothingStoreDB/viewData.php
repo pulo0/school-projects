@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="CSS/viewStyle.css">
-<h1>Clothing Store Database</h1>
+<h1 style="color: white;">Clothing Store Database</h1>
 <h2><a href="addDataForm.html" class="add">Add</a></h2>
 
 <?php

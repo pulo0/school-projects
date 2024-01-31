@@ -35,7 +35,7 @@ INSERT INTO `clothing_store` VALUES
 (NULL,'MyBady','Child','S','Underwear',15.99,1),
 (NULL,'A.P.C','Man','L','Pants',18.99,0),
 (NULL,'Beyond Yoga','Woman','XS','Underwear',29.99,1),
-(NULL,'H&M','Woman','XL','Jeansy',24.80,1),
+(NULL,'H&M','Woman','XL','Jeans',24.80,1),
 (NULL,'Frye','Divided','M','Pants',65.00,1),
 (NULL,'East West Effy','Divided','XXXL','Jackets/Suits',87.13,0),
 (NULL,'N21','Divided','XS','Addons',139.99,1),
@@ -49,5 +49,10 @@ INSERT INTO `clothing_store` VALUES
 (NULL,'LeewAQ','Woman','XXL','Dresses',259.99,1),
 (NULL,'Medicine','Man','S','Jackets/Suits',319.99,1),
 (NULL,'MyBadB','Man','XS','Addons',459.99,0),
-(NULL,'Snow','Woman','XS','Addons',111.99,1);
+(NULL,'Snow','Woman','XS','Addons',111.99,1),
+(NULL,'Maja','Divided','L','Dresses',74.99,1),
+(NULL,'New Balance','Man','XXXL','Underwear',15.99,1),
+(NULL,'Adidas','Divided','S','Pants',11.11,0),
+(NULL,'Speedo','Woman','L','Underwear',12.99,1),
+(NULL,'Noori Rug','Divided','L','Shirts',12.99,1);
 UNLOCK TABLES;
