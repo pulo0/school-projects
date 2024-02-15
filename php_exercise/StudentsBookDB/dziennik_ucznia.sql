@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS `dziennik_ucznia`;
+DROP DATABASE IF EXISTS `dziennik_ucznia`;
 CREATE DATABASE dziennik_ucznia;
 USE dziennik_ucznia;
 
@@ -31,7 +31,7 @@ CREATE TABLE `Nauczyciele` (
 	`ID_nauczycieli` INT(3) NOT NULL AUTO_INCREMENT,
 	`Imie` varchar(30) NOT NULL,
 	`Nazwisko` varchar(30) NOT NULL,
-	`Przedmiot` varchar(20) NOT NULL,
+	`Przedmiot` varchar(40) NOT NULL,
 	`Rok_rozp` year NOT NULL,
 	PRIMARY KEY (`ID_nauczycieli`)
 );
@@ -62,7 +62,7 @@ CREATE TABLE `Klasa` (
 	PRIMARY KEY (`ID_klasy`)
 );
 
-DROP TABLE IF EXISTS `Klasa`;
+DROP TABLE IF EXISTS `Obecnosc`;
 CREATE TABLE `Obecnosc` (
 	`ID_obecnosci` INT(3) NOT NULL AUTO_INCREMENT,
 	`Data` DATE NOT NULL,
@@ -71,6 +71,10 @@ CREATE TABLE `Obecnosc` (
 	`ID_nauczyciel` INT(3) NOT NULL,
 	PRIMARY KEY (`ID_obecnosci`)
 );
+
+-- 
+-- Creating a foreign key for all the tables in DB
+-- 
 
 ALTER TABLE `Uczniowie` ADD CONSTRAINT `Uczniowie_fk0` FOREIGN KEY (`ID_klasy`) REFERENCES `Klasa`(`ID_klasy`);
 
@@ -89,8 +93,11 @@ ALTER TABLE `Obecnosc` ADD CONSTRAINT `Obecnosc_fk0` FOREIGN KEY (`ID_ucznia`) R
 ALTER TABLE `Obecnosc` ADD CONSTRAINT `Obecnosc_fk1` FOREIGN KEY (`ID_nauczyciel`) REFERENCES `Nauczyciele`(`ID_nauczycieli`);
 
 -- 
--- Insterting Data into DB
+-- Inserting Data into DB
 -- 
+
+-- (NULL, ''),
+-- A template for adding each record to `Przedmioty`
 
 LOCK TABLES `Przedmioty` WRITE;
 INSERT INTO `Przedmioty` VALUES
@@ -116,6 +123,9 @@ INSERT INTO `Przedmioty` VALUES
 (NULL, 'Muzyka'),
 (NULL, 'Edukacja dla Bezpieczeństwa');
 UNLOCK TABLES;
+
+-- (NULL, '', '', '', 0000),
+-- A template for adding each record to `Nauczyciele`
 
 LOCK TABLES `Nauczyciele` WRITE;
 INSERT INTO `Nauczyciele` VALUES
