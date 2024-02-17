@@ -1,6 +1,12 @@
+--Accessing to a database || creating one if doesn't exist
+
 DROP DATABASE IF EXISTS `dziennik_ucznia`;
 CREATE DATABASE dziennik_ucznia;
 USE dziennik_ucznia;
+
+--
+-- Creating tables for the DB `dziennik_ucznia`
+--
 
 DROP TABLE IF EXISTS `Uczniowie`;
 CREATE TABLE `Uczniowie` (
@@ -197,3 +203,48 @@ INSERT INTO `Nauczyciele` VALUES
 (NULL, 'Katarzyna', 'Mazur', 'Fizyka', 1974),
 (NULL, 'Leszek', 'Kaczmarczyk', 'Biologia', 1990),
 (NULL, 'Iwona', 'Wieczorek', 'Informatyka', 1988);
+
+-- (NULL, ),
+-- A template for adding each record to `Wychowawca`
+
+LOCK TABLE `Wychowawca` WRITE;
+INSERT INTO `Wychowawca` INTO
+(NULL, 1),
+(NULL, 48),
+(NULL, 15),
+(NULL, 19),
+(NULL, 35),
+(NULL, 10),
+(NULL, 23),
+(NULL, 50),
+(NULL, 13),
+(NULL, 7),
+(NULL, 46),
+(NULL, 21),
+(NULL, 12),
+(NULL, 32),
+(NULL, 28),
+(NULL, 2);
+
+-- (NULL, '', ),
+-- A template for adding each record to `Klasa`
+
+LOCK TABLE `Klasa` WRITE;
+INSERT INTO `Klasa` INTO
+(NULL, '1A', 1),
+(NULL, '1B', 2),
+(NULL, '2A', 12),
+(NULL, '2B', 28),
+(NULL, '3A', 32),
+(NULL, '3B', 21),
+(NULL, '4A', 46),
+(NULL, '4B', 7),
+(NULL, '5A', 50),
+(NULL, '5B', 13),
+(NULL, '6A', 23),
+(NULL, '6B', 35),
+(NULL, '7A', 10),
+(NULL, '7B', 48),
+(NULL, '8A', 19),
+(NULL, '8B', 15);                                                                                                                                                                                 
+
