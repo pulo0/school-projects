@@ -218,6 +218,9 @@ INSERT INTO `Klasa` VALUES
 (NULL, '8A', 10),
 (NULL, '8B', 11);                                                                                                                                                                                 
 
+-- (NULL, '', '', 00000000000, '', '', , , 00-000, '', '0000-00-00', ),
+-- A template for adding each record to `Uczniowie`
+
 LOCK TABLE `Uczniowie` WRITE;
 INSERT INTO `Uczniowie` VALUES
 (NULL, 'Jan', 'Nowak', '91121012345', 'Warszawa', 'Polna', 11, 5, '00-001', 'Polska', '2011-05-20', 1),
@@ -271,6 +274,9 @@ INSERT INTO `Uczniowie` VALUES
 (NULL, 'Benjamin', 'Wilson', '05111212345', 'Warszawa', 'Marszałkowska', 12, 7, '00-100', 'Wielka Brytania', '2015-06-12', 13),
 (NULL, 'Charlotte', 'Moore', '06121223456', 'Kraków', 'Piastowska', 18, 5, '30-200', 'Australia', '2016-09-01', 16);
 
+-- (NULL, , , , , '0000-00-00'),
+-- A template for adding each record to `Oceny`
+
 LOCK TABLE `Oceny` WRITE;
 INSERT INTO `Oceny` VALUES
 (NULL, 5, 1, 1, 2, '2011-05-12'),
@@ -283,6 +289,9 @@ INSERT INTO `Oceny` VALUES
 (NULL, 6, 3, 8, 8, '2011-06-27'),
 (NULL, 5, 4, 9, 9, '2012-08-09'),
 (NULL, 4, 5, 10, 10, '2013-10-12');
+
+-- (NULL, '0000-00-00', '', , ),
+-- A template for adding each record to `Obecnosc`
 
 LOCK tables `Obecnosc` WRITE;
 INSERT INTO `Obecnosc` VALUES
