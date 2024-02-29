@@ -3,7 +3,6 @@
 <h2><a href="addDataForm.html" class="add">Add</a></h2>
 
 <?php
-
 $con = new mysqli('127.0.0.1', 'root', '', 'clothing_store')
 or die("error encounter on syncing to DB");
 
