@@ -11,6 +11,6 @@ or die("error encounter on syncing to DB");
 $con -> query("delete from clothing_store where id=$id");
 $con -> close();
 
-header("Location: viewData_admin.php");
+header("Location: viewData_client.php");
 
 ?>

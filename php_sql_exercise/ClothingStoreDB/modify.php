@@ -1,6 +1,11 @@
 <link rel="stylesheet" href="CSS/modifyStyle.css">
 <?php
-    $con = new mysqli('127.0.0.1', 'root', '', 'clothing_store')
+    $db_host = 'localhost';
+    $db_user = 'root';
+    $db_password = '';
+    $db_database = 'clothing_store';
+
+    $con = new mysqli($db_host, $db_user, $db_password, $db_database)
     or die("error encounter on syncing to DB");
 
     $id = $_GET['id'];
