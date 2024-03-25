@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KGmIa+cU733ffd/Sh5sROfp6eNcauZ0G8Vd5f5oWeLDpjFuesf+xrcpK4D6hRYY9QCqemduTWb8VTgJWibETRQ==",
+  "dgSpecHash": "DnjBy7gE1HOeCCancA9QYibPH1X857+9qs7kMIZNmktP+exIT/6u3U9RNUL1/ifclISQbXQjxlEDMwL8V3x2mw==",
   "success": true,
   "projectFilePath": "D:\\Git\\school-projects\\C#_exercise\\02.04.2022\\exercise_02.04.22\\exercise_02.04.22.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\barte\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\barte\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\barte\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\barte\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
