@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Relative Units - em</title>
+  </head>
+  <body>
+    <button class="back-button" onclick="goBack()">Back</button>
+    <h1>em</h1>
+    <hr class="solid" />
+    <p class="columns" style="width: fit-content !important; height: fit-content">
+      The em is a unit of length that is equal to the computed font size of the
+      element. It is used in typography to define the size of a font. The em is a
+      relative unit of length, which means that the size of an em is not fixed and
+      can vary depending on the font size of the parent element. The em is commonly
+      used in web design to define the size of text and other elements on a web
+      page.
+    </p>
+
+    <div
+      class="columns-primary"
+      style="
+        width: 119.9em !important;
+        height: 70px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+      "
+    >
+      <h2>
+        This is a representation of a width resolution of a current screen (which
+        is a FHD) so 120em (which is 1920px), represented in em.
+      </h2>
+    </div>
+    <div
+      class="columns-secondary"
+      style="
+        width: 67.5em;
+        height: 70px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+      "
+    >
+      <h2>
+        This is a representation of a height resolution of a current screen so
+        67.5em (1920px = 67.5em), represented in em.
+      </h2>
+    </div>
+
+    <script src="/goToPage.js"></script>
+  </body>
+</html>
