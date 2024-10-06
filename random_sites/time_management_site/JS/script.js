@@ -1,7 +1,7 @@
 const colors = ["#e3ffeb", "#eee3ff", "#ffe3e3"];
 let indexPriority = 0;
 
-let priorityColor = document.querySelectorAll("#priority").forEach((e) => {
+document.querySelectorAll("#priority").forEach((e) => {
   const row = e.closest("tr");
   switch (e.innerHTML) {
     case "niski":
@@ -16,7 +16,6 @@ let priorityColor = document.querySelectorAll("#priority").forEach((e) => {
   }
   row.style.backgroundColor = colors[indexPriority];
 });
-console.log(priorityColor);
 
 document.querySelectorAll(".done").forEach((button) => {
   button.addEventListener("click", function (event) {
@@ -31,6 +30,19 @@ document.querySelectorAll(".done").forEach((button) => {
     // If the task is already done, remove line-through and grey background
     if (row.style.textDecoration === "line-through") {
       row.style.textDecoration = "none";
+      row.querySelectorAll('#priority').forEach((e) => {
+        switch (e.innerHTML) {
+          case "niski":
+            indexPriority = 0;
+            break;
+          case "sredni":
+            indexPriority = 1;
+            break;
+          default:
+            indexPriority = 2;
+            break;
+        }
+      });
       row.style.backgroundColor = colors[indexPriority];
     } else {
       row.style.textDecoration = "line-through";
