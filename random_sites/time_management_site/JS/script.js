@@ -30,7 +30,7 @@ document.querySelectorAll(".done").forEach((button) => {
     // Defining variables
     const row = this.closest("tr");
     const table = row.closest("table");
-
+    
     // Add line-through and grey background (indicating that the task is done)
     // If the task is already done, remove line-through and grey background
     if (row.style.textDecoration === "line-through") {
