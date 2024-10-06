@@ -1,6 +1,10 @@
+// Color variables declaration
+// (with also an index used in switch case)
 const colors = ["#e3ffeb", "#eee3ff", "#ffe3e3"];
 let indexPriority = 0;
 
+// Set colors at start for each priority
+// Setting colors for an entire row, not only for the priority cell
 document.querySelectorAll("#priority").forEach((e) => {
   const row = e.closest("tr");
   switch (e.innerHTML) {
@@ -17,6 +21,7 @@ document.querySelectorAll("#priority").forEach((e) => {
   row.style.backgroundColor = colors[indexPriority];
 });
 
+// When clicked on done button then change the style of the row
 document.querySelectorAll(".done").forEach((button) => {
   button.addEventListener("click", function (event) {
     // Prevent the default action of the button
@@ -52,6 +57,7 @@ document.querySelectorAll(".done").forEach((button) => {
   });
 });
 
+// Roll out more options button
 document.querySelectorAll(".more").forEach((button) => {
   button.addEventListener("click", function (event) {
     // Prevent the default action of the button
@@ -76,6 +82,7 @@ document.querySelectorAll(".more").forEach((button) => {
   });
 });
 
+// In modify subsite, button for backing up to main page
 document.querySelector(".back").addEventListener("click", function (event) {
   // Prevent the default action of the button
   event.preventDefault();
