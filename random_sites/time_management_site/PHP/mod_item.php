@@ -20,7 +20,7 @@ while ($row = $result->fetch_assoc()) {
             <td>
                 <select name="priorytet_zadania">
                     <option value="niski">niski</option>
-                    <option value="średni">średni</option>
+                    <option value="sredni">średni</option>
                     <option value="wysoki">wysoki</option>
                 </select>
             </td>

@@ -36,13 +36,44 @@
     }
 
     echo "</table>";
-    echo <<< EOF
-        <div class='open-parent'>
-            <button class='open-new'>Utwórz nowe TODO</button>
-        </div>
-    EOF;
-
     ?>
+    <div class='open-parent'>
+        <button class='open-new' id='open-new' onclick="onOpen()">Utwórz nowe TODO</button>
+    </div>
+
+    <table id='add-form' style="display: none;">
+        <form action="index.php" method="post">
+            <thead>
+                <th>Tytuł</th>
+                <th>Opis</th>
+                <th>Poziom priorytetu</th>
+                <th>Progres zadania</th>
+                <th>Deadline</th>
+                <th>Dodaj</th>
+            </thead>
+            <tr>
+                <td><input type="text" name="zadanie_tytul"></td>
+                <td><input type="text" name="opis"></td>
+                <td>
+                    <select name="priorytet_zadania">
+                        <option value="niski">niski</option>
+                        <option value="sredni">średni</option>
+                        <option value="wysoki">wysoki</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="progres_zadania">
+                        <option value="w trakcie">w trakcie</option>
+                        <option value="wykonane">wykonane</option>
+                    </select>
+                </td>
+                <td><input type="datetime-local" name="deadline"></td>
+                <td><input type="submit" value="Dodaj" name="dodaj"></td>
+            </tr>
+        </form>
+    </table>
+
+    <script src="JS/open.js"></script>
     <script src="JS/script.js"></script>
 </body>
 
