@@ -52,9 +52,9 @@ INSERT INTO `zadanie` VALUES
 (6,'Egzamin na technika','Napisać egzamin na technika','wazny','w trakcie','2025-01-13 12:10:00'),
 (7,'Matura','Napisać mature','wazny','w trakcie','2025-05-01 09:15:00'),
 (8,'Zacząć pracę','Znaleźć pracę i pracować','sredni','w trakcie','2025-06-01 05:00:00'),
-(9, 'Kupić telewizor','Duży Samsung','niski','w trakcie','2025-01-01 12:00:00'),
-(10, 'Przygotować prezentacje na fizyke','fizyka atomowa','sredni','wykonane','2024-01-01 11:15:00'),
-(11, 'Zrobić kolejne zadanie domowe','tym razem z polskiego','wazny','w trakcie','2025-01-01 12:00:00');
+(9,'Kupić telewizor','Duży Samsung','niski','w trakcie','2025-01-01 12:00:00'),
+(10,'Przygotować prezentacje na fizyke','fizyka atomowa','sredni','wykonane','2024-01-01 11:15:00'),
+(11,'Zrobić kolejne zadanie domowe','tym razem z polskiego','wazny','w trakcie','2025-01-01 12:00:00');
 /*!40000 ALTER TABLE `zadanie` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
