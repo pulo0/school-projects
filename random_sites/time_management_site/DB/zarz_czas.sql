@@ -43,7 +43,18 @@ CREATE TABLE `zadanie` (
 
 LOCK TABLES `zadanie` WRITE;
 /*!40000 ALTER TABLE `zadanie` DISABLE KEYS */;
-INSERT INTO `zadanie` VALUES (1,'Zakupy','Zrobić zakupy','niski','wykonane','2024-09-06 13:30:00'),(2,'Zadanie domowe','Konkretnie z matematyki','sredni','w trakcie','2024-09-09 10:10:19'),(3,'MySQL książka','Przeczytać książkę','wazny','w trakcie','2024-10-31 01:00:00'),(4,'Prezent na święta','Zrobić prezent','wazny','w trakcie','2024-12-06 06:45:00'),(5,'Targi książki','Pójść na targi książki','sredni','w trakcie','2024-10-24 07:30:00'),(6,'Egzamin na technika','Napisać egzamin na technika','wazny','w trakcie','2025-01-13 12:10:00'),(7,'Matura','Napisać mature','wazny','w trakcie','2025-05-01 09:15:00'),(8,'Zacząć pracę','Znaleźć pracę i pracować','sredni','w trakcie','2025-06-01 05:00:00');
+INSERT INTO `zadanie` VALUES 
+(1,'Zakupy','Zrobić zakupy','niski','wykonane','2024-09-06 13:30:00'),
+(2,'Zadanie domowe','Konkretnie z matematyki','sredni','w trakcie','2024-09-09 10:10:19'),
+(3,'MySQL książka','Przeczytać książkę','wazny','w trakcie','2024-10-31 01:00:00'),
+(4,'Prezent na święta','Zrobić prezent','wazny','w trakcie','2024-12-06 06:45:00'),
+(5,'Targi książki','Pójść na targi książki','sredni','w trakcie','2024-10-24 07:30:00'),
+(6,'Egzamin na technika','Napisać egzamin na technika','wazny','w trakcie','2025-01-13 12:10:00'),
+(7,'Matura','Napisać mature','wazny','w trakcie','2025-05-01 09:15:00'),
+(8,'Zacząć pracę','Znaleźć pracę i pracować','sredni','w trakcie','2025-06-01 05:00:00'),
+(9, 'Kupić telewizor','Duży Samsung','niski','w trakcie','2025-01-01 12:00:00'),
+(10, 'Przygotować prezentacje na fizyke','fizyka atomowa','sredni','wykonane','2024-01-01 11:15:00'),
+(11, 'Zrobić kolejne zadanie domowe','tym razem z polskiego','wysoki','w trakcie','2025-01-01 12:00:00');
 /*!40000 ALTER TABLE `zadanie` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
