@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Zarządzanie Czasem - Strona</title>
+    <title>TODO</title>
 </head>
 
 <body>
-    <h1 style="text-align: center;">Zarządzanie Czasem</h1>
+    <h1 style="text-align: center;">TODO Lista</h1>
     <?php
     include 'PHP/db_conn.php';
 
@@ -36,8 +36,14 @@
     }
 
     echo "</table>";
+    echo <<< EOF
+        <div class='open-parent'>
+            <button class='open-new'>Utwórz nowe TODO</button>
+        </div>
+    EOF;
 
     ?>
     <script src="JS/script.js"></script>
 </body>
+
 </html>

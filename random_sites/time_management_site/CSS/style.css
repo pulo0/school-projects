@@ -1,20 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 h1 {
-    text-align: center;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
 }
 
 table {
-    width: 50%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 12px 12px 6px 1px rgba(0, 0, 0, 0.263);
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 12px 12px 6px 1px rgba(0, 0, 0, 0.263);
 }
 
 input[type="text"],
@@ -22,62 +22,93 @@ input[type="datetime-local"],
 input[type="submit"],
 button.back,
 select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button,
+td {
+  transition: transform 100ms ease-out;
+}
+
+button:hover,
+td:hover {
+  transform: scale(1.05);
+}
+
+div.open-parent {
+  display: flex;
+  justify-content: center;
+}
+
+button.open-new {
+  width: auto;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button.open-new:hover,
+button.back:hover,
+input[type="submit"]:hover {
+  background-color: #c9c9c9;
 }
 
 td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
 .done,
 .delete,
 .modify,
 .more {
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .done {
-    background-color: #28a745;
+  background-color: #28a745;
 }
 
 .done:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
 
 .delete {
-    background-color: #dc3545;
+  background-color: #dc3545;
 }
 
 .delete:hover {
-    background-color: #c82333;
+  background-color: #c82333;
 }
 
 .modify {
-    background-color: #359fdc;
+  background-color: #359fdc;
 }
 
 .modify:hover {
-    background-color: #177bbd;
+  background-color: #177bbd;
 }
 
 .more {
-    background-color: #ffc107;
+  background-color: #ffc107;
 }
 
 .more:hover {
-    background-color: #d39e00;
+  background-color: #d39e00;
 }
 
 .details {
-    display: none;;
+  display: none;
 }
