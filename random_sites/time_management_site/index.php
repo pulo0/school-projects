@@ -8,14 +8,30 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;">TODO Lista</h1>
+    <ul>
+        <h1 style="text-align: center;">TODO Lista</h1>
+        <div class="priority-legend">
+            <div>
+                <div class="low"></div>
+                <span>niski</span>
+            </div>
+            <div>
+                <div class="medium"></div>
+                <span>średni</span>
+            </div>
+            <div>
+                <div class="important"></div>
+                <span>ważny</span>
+            </div>
+
+        </div>
+
+    </ul>
     <?php
     include 'PHP/db_conn.php';
 
     $result = $conn->query('select * from zadanie')
         or die('Query failed: ' . mysqli_error($conn));
-
-    $conn->close();
 
     echo "<table>";
 
@@ -58,7 +74,7 @@
                     <select name="priorytet_zadania">
                         <option value="niski">niski</option>
                         <option value="sredni">średni</option>
-                        <option value="wysoki">wysoki</option>
+                        <option value="wazny">ważny</option>
                     </select>
                 </td>
                 <td>
@@ -72,6 +88,21 @@
             </tr>
         </form>
     </table>
+
+    <?php
+        if(isset($_POST['dodaj'])) {
+            $title = $_POST['zadanie_tytul'];
+            $desc = $_POST['opis'];
+            $priority = $_POST['priorytet_zadania'];
+            $progress = $_POST['progres_zadania'];
+            $deadline = $_POST['deadline'];
+
+            $sql = "INSERT INTO zadanie VALUES (NULL, '$title', '$desc', '$priority', '$progress', '$deadline');";
+            $conn -> query($sql)
+            or die('Query error: ' . mysqli_error($conn));
+            $conn -> close();
+        }
+    ?>
 
     <script src="JS/open.js"></script>
     <script src="JS/script.js"></script>
