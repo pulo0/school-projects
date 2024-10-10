@@ -57,7 +57,6 @@ function selectListMethods() {
   let selectListValues = list.value;
   let arr = exampleArray;
 
-  console.log(radio);
   switch (radio) {
     case "upper":
       paragraphStr.innerHTML = exampleString.toUpperCase() + "<br>";
