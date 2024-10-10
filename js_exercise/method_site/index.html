@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon-16x16.png"
+    />
+    <link rel="manifest" href="image/site.webmanifest" />
+    <title>Methods exercises</title>
+  </head>
+  <body>
+    <div class="form-div">
+      <fieldset>
+        <legend>
+          Methods to choose from (for string is: 'You could do better', for the
+          number is: 18.52 and Array is pretty long :D)
+        </legend>
+        <select name="methods" id="methods" required>
+          <optgroup label="Array Methods">
+            <option value="push">push()</option>
+            <option value="pop">pop()</option>
+            <option value="shift">shift()</option>
+            <option value="unshift">unshift()</option>
+            <option value="splice">splice()</option>
+            <option value="reverse">reverse()</option>
+            <option value="slice">slice()</option>
+            <option value="join">join()</option>
+          </optgroup>
+          <optgroup label="String Methods">
+            <option value="includes">includes()</option>
+            <option value="concat">concat()</option>
+            <option value="match">match()</option>
+            <option value="search">search()</option>
+          </optgroup>
+          <optgroup label="Math Functions">
+            <option value="sqrt">Math.sqrt()</option>
+            <option value="floor">Math.floor()</option>
+            <option value="ceil">Math.ceil()</option>
+            <option value="round">Math.round()</option>
+            <option value="pi">Math.pi()</option>
+            <option value="random">Math.random()</option>
+            <option value="random-floor">Math.floor(Math.random())</option>
+            <option value="random-ceil">Math.ceil(Math.random())</option>
+            <option value="pow">Math.pow()</option>
+          </optgroup>
+        </select>
+        <input type="radio" name="letters" value="upper" id="letters" />
+        <label for="letters">Uppercase</label>
+        <input type="radio" name="letters" value="lower" id="letters" />
+        <label for="letters">Lowercase</label>
+        <button onclick="selectListMethods()" value="send">Submit</button>
+      </fieldset>
+      <h1 id="string-par"></h1>
+      <h2 id="array-par"></h2>
+      <h2 id="number-par"></h2>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
