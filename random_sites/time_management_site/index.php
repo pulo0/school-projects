@@ -9,7 +9,7 @@
 
 <body>
     <ul>
-        <h1 style="text-align: center;">TODO Lista</h1>
+        <h1 style="text-align: center;">TODO List</h1>
         <div class="priority-legend">
             <div>
                 <div class="low"></div>
@@ -37,7 +37,6 @@
 
     foreach ($result as $row) {
         echo <<< EOF
-
             <tr class='row'>
             <td>$row[zadanie_tytul]</td>
             <td class="details" style="display: none">$row[opis]</td>
@@ -58,7 +57,7 @@
     </div>
 
     <table id='add-form' style="display: none;">
-        <form action="index.php" method="post">
+        <form action="PHP/add_item.php" method="post">
             <thead>
                 <th>Tytuł</th>
                 <th>Opis</th>
@@ -88,22 +87,6 @@
             </tr>
         </form>
     </table>
-
-    <?php
-        if(isset($_POST['dodaj'])) {
-            $title = $_POST['zadanie_tytul'];
-            $desc = $_POST['opis'];
-            $priority = $_POST['priorytet_zadania'];
-            $progress = $_POST['progres_zadania'];
-            $deadline = $_POST['deadline'];
-
-            $sql = "INSERT INTO zadanie VALUES (NULL, '$title', '$desc', '$priority', '$progress', '$deadline');";
-            $conn -> query($sql)
-            or die('Query error: ' . mysqli_error($conn));
-            $conn -> close();
-        }
-    ?>
-
     <script src="JS/open.js"></script>
     <script src="JS/script.js"></script>
 </body>
