@@ -1,3 +1,7 @@
+function randomizeNum(exponent) { 
+  return Math.floor(Math.random() * exponent);
+}
+
 function changeStyle() {
   let paragraph = document.getElementById("par");
   const alignment = ["left", "right", "center", "justify"];
@@ -29,6 +33,7 @@ function changeStyle() {
     "system-ui",
   ];
   const style = ["normal", "italic", "oblique"];
+  const maxPx = 10;
   const size = 50;
   let randomColors = [];
   for (let i = 0; i < 3; i++) {
@@ -38,19 +43,20 @@ function changeStyle() {
 
   paragraph.style.color = `rgb(${randomColors[0]}, ${randomColors[1]}, ${randomColors[2]})`;
   paragraph.style.textAlign = `${
-    alignment[Math.floor(Math.random() * alignment.length)]
+    alignment[randomizeNum(alignment.length)]
   }`;
   paragraph.style.textDecoration = `${
-    decoration[Math.floor(Math.random() * decoration.length)]
+    decoration[randomizeNum(decoration.length)]
   }`;
   paragraph.style.textTransform = `${
-    transform[Math.floor(Math.random() * transform.length)]
+    transform[randomizeNum(transform.length)]
   }`;
-  paragraph.style.letterSpacing = `${Math.floor(Math.random() * 10)}px`;
-  paragraph.style.wordSpacing = `${Math.floor(Math.random() * 10)}px`;
+  paragraph.style.letterSpacing = `${randomizeNum(maxPx)}px`;
+  paragraph.style.wordSpacing = `${randomizeNum(maxPx)}px`;
   paragraph.style.fontStyle = `${
-    style[Math.floor(Math.random() * style.length)]
+    style[randomizeNum(style.length)]
   }`;
-  paragraph.style.fontSize = `${Math.floor(Math.random() * size)}px`;
-  paragraph.style.fontFamily = `${Math.floor(Math.random() * family.length)}`;
+  paragraph.style.fontSize = `${randomColors(size)}px`;
+  paragraph.style.fontFamily = `${randomizeNum(family.length)}`;
 }
+
