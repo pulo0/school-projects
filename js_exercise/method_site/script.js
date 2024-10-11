@@ -44,7 +44,10 @@ const exampleToAddArray = [
   "oriental cherry",
 ];
 let exampleString = "You could do better";
-let exampleNumber = 18.52;
+let exampleNumber = 18.523132;
+
+// TODO: Math function
+// sqrt, floor, ceil, round, pi, random (with floor/ceil), pow
 
 function selectListMethods() {
   // Variables declarations
@@ -57,6 +60,7 @@ function selectListMethods() {
   let selectListValues = list.value;
   let arr = exampleArray;
 
+  console.log(radio);
   switch (radio) {
     case "upper":
       paragraphStr.innerHTML = exampleString.toUpperCase() + "<br>";
@@ -130,6 +134,14 @@ function selectListMethods() {
         exampleNumber
       )}`;
       break;
+    case "sqrt2":
+      paragraphNum.innerHTML = `Square root of 2: ${Math.SQRT2}`;
+      break;
+    case "abs":
+      paragraphNum.innerHTML = `Absolute number of exampleNumber (${exampleNumber}): ${Math.abs(
+        exampleNumber
+      )}`;
+      break;
     case "floor":
       paragraphNum.innerHTML = `Floored ${exampleNumber} to floor: ${Math.floor(
         exampleNumber
@@ -142,6 +154,11 @@ function selectListMethods() {
       break;
     case "round":
       paragraphNum.innerHTML = `Rounded ${exampleNumber} to round: ${Math.round(
+        exampleNumber
+      )}`;
+      break;
+    case "sign":
+      paragraphNum.innerHTML = `Returning 1 or -1 depending on the number: ${Math.sign(
         exampleNumber
       )}`;
       break;
@@ -168,6 +185,17 @@ function selectListMethods() {
       paragraphNum.innerHTML = `Number (${exampleNumber}) to the power of random int between 1 and 10 (now: ${rand}): ${Math.pow(
         exampleNumber,
         rand
+      )}`;
+      break;
+    // Number functions
+    case "tofixed":
+      paragraphNum.innerHTML = `Number to fixed with 2 decimal numbers: ${exampleNumber.toFixed(
+        2
+      )}`;
+      break;
+    case "toprecision":
+      paragraphNum.innerHTML = `String representing this number to specified digits: ${exampleNumber.toPrecision(
+        1
       )}`;
       break;
     default:
