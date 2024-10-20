@@ -1,0 +1,269 @@
+/*Eliminate all the default margins and paddings 
+on the start (like the gap between the page
+and the nav bar) + for debug - white border to see
+every single element's padding etc.*/
+* {
+    margin: 0px;
+    padding: 0px;
+    /*border: solid 1px whitesmoke;*/ /*Debug Mode Border*/
+}
+
+/*Body to set font and color of page, and no overflow*/
+body {
+    background-color: #032b61;
+    font-family: 'Fjalla One', sans-serif;
+    overflow-x: hidden;
+}
+
+/*Setting up the nav element
+his position and scale*/
+.links {
+    background-color: #336ebb;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    box-shadow: 0 4px 10px 0 #7d0ac04d, 0 8px 15px 0 #05419159;
+}
+
+/*Setting up position of the logo
+also it gives the logo place in
+the middle (this left: thingy)*/
+.logo {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 48%;
+}
+
+/*On hover with a mouse both logos scale down*/
+.logo:hover,
+.fandom:hover {
+    transform: scale(0.85);
+}
+
+/*This smoothes out the transition between scaling
+down on hover and moving out from the element*/
+/*Why not in :hover though? Well, as I said
+it smoothes out on hover AND when the mouse
+moves out of the picture*/
+.logo, 
+.fandom {
+    transition: transform 200ms ease;
+}
+
+/*fandom logo - setting up the pos
+and the scale of the image, also
+it moves it to left corner*/
+.fandom {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%); /*filter to turn picture black&white*/
+    left: 96%;
+    margin-right: 20px;
+    margin-top: 1px;
+}
+
+/*It sets up the link About Us
+its position, text stuff*/
+a.info {
+    /*font/text decoration, personalization*/
+    color: white;
+    font-size: xx-large;
+    justify-content: center;
+    text-decoration-line: none;
+    /*Position stuff*/
+    position: fixed;
+    margin-left: 20px;
+    top: 10px;
+    /*Amimation*/
+    background: linear-gradient(to right, gray, gray 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+/*On hover it will fill the gradient that is gray to 100%*/
+/*Also whole animation is in a.info just to be more smooth*/
+a.info:hover {
+    background-position: 0 100%;
+}
+
+/*Div of a moving text it sets
+up his position and scale*/
+.move {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    top: 4em;
+}
+
+/*Animation in texts (from left to right)
+It will initate the animation to both texts*/
+p.text {
+    width: fit-content;
+    color: white;
+    font-size: x-large;
+    font-style: italic;
+    letter-spacing: 4px;
+    opacity: 50%;
+    animation-name: leftToRight;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*keyframes from where the text needs to go
+from beginnig of a page with some offset 
+(-600px from the left) to the end
+of a page and some offset to just
+to the animation was seamless 
+(1920px - fullscreen, 80px - offset)*/
+@keyframes leftToRight {
+    0% {transform: translateX(-650px);}
+    100% {transform: translateX(2000px);}
+}
+
+/*Sets default setting, like white text, pos
+width etc. to every single to table that is*/
+.tableLeftTop, 
+.tableLeftBottom, 
+.tableMiddle, 
+.tableRight{
+    color: white;
+    position: absolute;
+    width: 500px;
+    margin: 10px;
+    float: left;
+    left: 2.5em;
+    top: 13%;
+}
+
+/*Overrides a remaining members table's position to
+give it somewhere else to be seen clearly*/
+.tableLeftBottom {
+    left: 36.5% !important;
+}
+
+/*Overrides a matches table's position to
+give it somewhere else to be seen clearly*/
+.tableMiddle {
+    left: 36.5% !important;
+    top: 65% !important;
+}
+
+/*Overrides a upcoming events table's position to
+give it somewhere else to be seen clearly*/
+.tableRight {
+    left: 85em !important;
+}
+
+/*This gives every single table it's a curve in the border and it's shadow*/
+.tableLeftTop table, 
+.tableLeftBottom table, 
+.tableMiddle table, 
+.tableRight table {
+    width: 500px;
+    background-color: #336ebb;
+    border-radius: 10px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px 0 #000000e1, 0 8px 15px 0 #000000e1;
+}
+
+/*Title of tables, sets a style of a text and the backkground color
+and gives it a offset in specific sides of a margin*/
+.tableLeftTop h1, 
+.tableLeftBottom h1, 
+.tableMiddle h1, 
+.tableRight h1 {
+    background-color: #6a9ee2;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 0 4px 10px 0 #000000e1, 0 8px 15px 0 #000000e1;
+    /*Position*/
+    margin-left: 7px;
+    margin-right: 7px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+/*Shrinks the first column of Highlighted Players table*/
+.tableLeftTop img, 
+.headRowFirst{
+    width: 80px;
+}
+
+/*Gives every single row and the last row it's own
+animation and the divider (in the code it is a border
+but only at the bottom)*/
+.row, 
+.lastRow {
+    text-align: center;
+    font-size: 25px;
+    border-bottom: solid 1px #464646;
+    transition: transform 200ms ease;
+}
+
+/*Eliminates the divider at the last border,
+just thus the border not be seen going out
+of range of a table*/
+.lastRow {
+    border-bottom: none !important;
+}
+
+/*Scales up when the mouse points an item
+in a table, animation is in .row, .lastRow*/
+.row:hover, 
+.lastRow:hover{
+    transform: scale(1.05);
+}
+
+/*Sets the width and height of a member images*/
+.memberImage {
+    image-rendering: optimizeQuality;
+    border-radius: 5px;
+    margin-left: 3px;
+    width: 80px;
+    height: 90px;
+    justify-self: center;
+}
+
+/*Footer thingys*/
+/*Just like the navbar, it's exactly like it*/
+.ending {
+    background-color: #336ebb;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    top: 89%;
+}
+
+/*Just adjustments on the list in the footer
+width, color of the text*/
+.ending ul {
+    color: white;
+    display: block;
+    width: fit-content;
+    font-size: x-large;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/*Sets up separetely the margin between list's items*/
+.listText {
+    margin: 15px 0;
+}
+
+/*Adjusting the image (Blue Lock image) to be on the left*/
+.imageFooter {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    left: 80%;
+    bottom: 0px;
+    padding-bottom: 15px;
+    margin: 0 60px;
+}
