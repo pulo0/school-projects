@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-style: Helvetica;
+}
+
+.list-block,
+.logo-block {
+  background: #6face3;
+  color: blue;
+  height: 300px;
+  width: 30%;
+  float: left;
+}
+
+.form-block {
+  background: #6face3;
+  color: blue;
+  height: 300px;
+  width: 40%;
+  float: left;
+}
+
+.main-block {
+  background: #4c93d2;
+  height: 350px;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+footer {
+  background: #2d77ba;
+  color: white;
+  height: 170px;
+  padding: 15px;
+}
+
+a {
+  background-color: lightskyblue;
+  margin: 5px;
+  padding: 10px;
+}
+
+a:visited {
+  background-color: lightsteelblue;
+}

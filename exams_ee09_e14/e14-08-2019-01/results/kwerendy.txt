@@ -1,0 +1,4 @@
+select nazwa, dostepnosc, cena from podzespoly where producenci_id=5;
+select id, opis from podzespoly where dostepnosc=0 and producenci_id between 1 and 2;
+select podzespoly.opis, podzespoly.cena, producenci.nazwa from podzespoly inner join producenci on producenci.id = podzespoly.producenci_id;
+alter table producenci add priorytet int;

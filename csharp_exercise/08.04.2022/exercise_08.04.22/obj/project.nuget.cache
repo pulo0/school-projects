@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kdMotiNLJSA=",
+  "success": true,
+  "projectFilePath": "D:\\Git\\school-projects\\csharp_exercise\\08.04.2022\\exercise_08.04.22\\exercise_08.04.22.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\barte\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\barte\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\barte\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\barte\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}
