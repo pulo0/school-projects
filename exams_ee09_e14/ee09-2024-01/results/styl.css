@@ -11,6 +11,7 @@ article {
     margin: 10px;
     border: 1px solid black;
     border-radius: 10px;
+    float: left;
 }
 
 article:hover {
@@ -20,12 +21,14 @@ article:hover {
 main {
     background-color: whitesmoke;
     height: 50px;
+    clear: both;
 }
 
 section.left {
     background-color: whitesmoke;
     width: 70%;
     height: 230px;
+    float: left;
 }
 
 section.right {
@@ -33,6 +36,7 @@ section.right {
     width: 30%;
     height: 230px;
     text-align: center;
+    float: left;
 }
 
 body {
