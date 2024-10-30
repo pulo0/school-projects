@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum wielbicieli psów</title>
+    <link rel="stylesheet" href="styl4.css">
 </head>
 
 <body>
