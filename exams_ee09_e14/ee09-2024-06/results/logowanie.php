@@ -26,6 +26,42 @@
             <input type="password" name="re-haslo">
             <button type="submit">Zapisz</button>
         </form>
+        <?php
+        $hostname = 'localhost';
+        $username = 'root';
+        $password = '';
+        $database = 'psy';
+        $conn = mysqli_connect($hostname, $username, $password, $database);
+
+        if (!empty($_POST['login']) && !empty($_POST['haslo']) && !empty($_POST['re-haslo'])) {
+            $login = $_POST['login'];
+            $haslo = $_POST['haslo'];
+            $confirmHaslo = $_POST['re-haslo'];
+            $sql = 'select login from uzytkownicy';
+
+            $result = $conn->query($sql);
+
+            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+                if ($login === $row['login']) {
+                    echo "<p>login występuje w bazie danych</p>";
+                    break;
+                }
+
+                if ($haslo !== $confirmHaslo) {
+                    echo "<p>hasła nie sa takie same, konto nie zostało dodane</p>";
+                    break;
+                }
+                $hash = sha1($haslo);
+                $sql = "INSERT INTO uzytkownicy VALUES (NULL, '$login', '$hash')";
+                $conn->query($sql);
+                echo "<p>Konto zostało dodane</p>";
+                break;
+            }
+        } else {
+            echo "<p>wypełnij wszystkie pola</p>";
+        }
+        $conn->close();
+        ?>
     </section>
     <section>
         <h2>Zapraszamy wszystkich</h2>
