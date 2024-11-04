@@ -63,7 +63,7 @@
         ?>
     </main>
     <footer>
-        <p>Stronę wykonał: Bartosz Skrzypek</p>
+        <p>Stronę wykonał: </p>
     </footer>
 </body>
 
