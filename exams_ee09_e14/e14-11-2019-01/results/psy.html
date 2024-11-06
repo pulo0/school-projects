@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria zdjęć</title>
+    <link rel="stylesheet" href="styl5.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Zdjęcia psów</h1>
+    </header>
+    <aside>
+      <h2>Kategorie</h2>
+      <ul>
+        <li><a href="psy.html">Psy</a></li>
+        <li><a href="koty.html">Koty</a></li>
+        <li>Gryzonie</li>
+        <li>Jaszczurki</li>
+        <li>Inne zdjęcia</li>
+      </ul>
+      <h4><a href="index.html">Powrót do strony głównej</a></h4>
+    </aside>
+    <section class="up">
+      <h1>Wybierz zdjęcie</h1>
+      <img
+        src="materialy5-6/pies1.jpg"
+        alt="pies1"
+        onclick="ImageClick('pies1', 'pies')"
+        onmouseover="ImageHover('pies1')"
+        onmouseout="ImageRelease('pies1')"
+      />
+      <img
+        src="materialy5-6/pies2.jpg"
+        alt="pies2"
+        onclick="ImageClick('pies2', 'pies')"
+        onmouseover="ImageHover('pies2')"
+        onmouseout="ImageRelease('pies2')"
+      />
+      <img
+        src="materialy5-6/pies3.jpg"
+        alt="pies3"
+        onclick="ImageClick('pies3', 'pies')"
+        onmouseover="ImageHover('pies3')"
+        onmouseout="ImageRelease('pies3')"
+      />
+    </section>
+    <section class="down">
+      <p><img src="materialy5-6/pies1.jpg" alt="pies-duzy" /></p>
+    </section>
+    <footer>
+      <span>Galerię zdjęć opracował: </span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
