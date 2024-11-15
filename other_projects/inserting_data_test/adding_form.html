@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="add_cars.php" method="post">
+        <h2>Cars table</h2>
+        <label for="owner-id">owner_id</label>
+        <input type="number" min="0" name="owner-id">
+        <label for="make">make</label>
+        <input type="text" name="make">
+        <label for="model">model</label>
+        <input type="text" name="model">
+        <label for="year">year</label>
+        <input type="number" min="1800" name="year">
+        <label for="color">color</label>
+        <input type="text" name="color">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <form action="add_owner.php" method="post">
+        <h2>Onwers table</h2>
+        <label for="first_name">first name</label>
+        <input type="text" name="first_name">
+        <label for="last_name">last name</label>
+        <input type="text" name="last_name">
+        <label for="email">email</label>
+        <input type="email" name="email">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
