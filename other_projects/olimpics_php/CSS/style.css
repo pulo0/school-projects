@@ -116,6 +116,11 @@ textarea:hover {
   color: var(--background-color);
 }
 
+.form-block-container:hover > :not(:hover) {
+  filter: blur(.5);
+  opacity: .5;
+}
+
 tr:hover {
   background-color: var(--foreground-color);
   color: var(--background-color);
