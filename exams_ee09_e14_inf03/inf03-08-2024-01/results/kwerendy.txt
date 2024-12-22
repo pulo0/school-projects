@@ -1,0 +1,20 @@
+------------ Zapytanie 1 ------------
+SELECT imie, nazwisko 
+-> FROM kadra 
+-> WHERE stanowisko IN ('fryzjer', 'stylista');
+
+------------ Zapytanie 2 ------------
+SELECT COUNT(*) as 'Liczba usług fryzjerskich', MAX(cena) as 'Maksymalna cena z usługę fryzjerską'
+-> FROM uslugi
+-> WHERE rodzaj = 2;
+
+------------ Zapytanie 3 ------------
+SELECT uslugi.nazwa, kadra.imie 
+-> FROM uslugi 
+-> INNER JOIN kadra
+-> ON kadra.id = uslugi.kadra_id
+-> WHERE uslugi.rodzaj IN (2, 3);
+
+------------ Zapytanie 4 ------------
+ALTER TABLE uslugi 
+-> ADD opinia text;
