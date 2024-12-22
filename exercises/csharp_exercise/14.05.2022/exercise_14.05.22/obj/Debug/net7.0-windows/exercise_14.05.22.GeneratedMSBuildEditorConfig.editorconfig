@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = exercise_14._05._22
-build_property.ProjectDir = D:\Git\school-projects\csharp_exercise\14.05.2022\exercise_14.05.22\
+build_property.ProjectDir = D:\Git\school-projects\exercises\csharp_exercise\14.05.2022\exercise_14.05.22\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VZosw94o1Mk=",
+  "dgSpecHash": "qv+g3jC+zwI=",
   "success": true,
-  "projectFilePath": "D:\\Git\\school-projects\\csharp_exercise\\02.04.2022\\exercise1_02.04.22\\exercise1_02.04.22.csproj",
+  "projectFilePath": "D:\\Git\\school-projects\\exercises\\csharp_exercise\\02.04.2022\\exercise1_02.04.22\\exercise1_02.04.22.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\barte\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
     "C:\\Users\\barte\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
