@@ -1,0 +1,66 @@
+* {
+  font-family: Cambria;
+}
+
+aside {
+  background-color: #e1bee7;
+  width: 25%;
+  float: left;
+}
+
+.left-one {
+  height: 400px;
+}
+
+.left-two {
+  height: 330px;
+}
+
+header,
+section {
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+    float: right;
+}
+
+header {
+    background-color: #9C64A6;
+    color: white;
+    height: 150px;
+    letter-spacing: 5px;
+}
+
+section {
+    color: indigo;
+    height: 580px;
+}
+
+footer {
+    background-color: #9C64A6;
+    color: white;
+    padding: 10px;
+    clear: both;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: circle;
+}
+
+img {
+    padding: 4px;
+    margin: 15px;
+}
+
+img:hover {
+    padding: 3px;
+    border: 1px dashed indigo;
+}
+
+.main-site {
+    padding: 25px;
+}
