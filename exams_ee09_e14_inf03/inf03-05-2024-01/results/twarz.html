@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon kosmetyczny</title>
+    <link rel="stylesheet" href="styl7.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Usługi kosmetyczne</h1>
+    </header>
+
+    <aside class="left-one">
+      <h2>Nasza oferta</h2>
+      <ol>
+        <li>
+          <a href="twarz.html">Oczyszczanie twarzy</a>
+          <ul>
+            <li>Peeling</li>
+            <li>Maska</li>
+          </ul>
+        </li>
+        <li>Masaż</li>
+        <li>Makijaż</li>
+      </ol>
+      <a href="index.html" class="main-site">Strona główna</a>
+    </aside>
+
+    <section>
+      <h3>Kalkulator ceny wizyty</h3>
+      <input type="checkbox" name="check" id="check1" />
+      <label for="check1">Peeling</label>
+      <br />
+      <input type="checkbox" name="check" id="check2" />
+      <label for="check2">Maska</label>
+      <br />
+      <input type="checkbox" name="check" id="check3" />
+      <label for="check3">Masaż twarzy</label>
+      <br />
+      <input type="checkbox" name="check" id="check4" />
+      <label for="check4">Makijaż</label>
+      <br />
+      <button onclick="checkPrices()">Oblicz cenę</button>
+      <p id="par"></p>
+    </section>
+
+    <aside class="left-two">
+      <img src="pliki/obraz1.jpg" alt="Personel" />
+    </aside>
+
+    <footer>
+      <p>Autor:</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
