@@ -1,0 +1,45 @@
+* {
+    font-family: Verdana;
+}
+
+header {
+    background-color: #6F79A8;
+    color: white;
+    height: 140px;
+    float: left;
+}
+
+.first-header {
+    width: 30%;
+}
+
+.second-header {
+    width: 70%;
+}
+
+article {
+    background-color: #9FA8DA;
+    width: 160px;
+    height: 85px;
+    margin: 5px;
+    border: 1px solid #6F79A8;
+    overflow: hidden;
+    float: left;
+}
+
+article:hover {
+    background-color: #6F79A8;
+    color: white;
+}
+
+footer {
+    background-color: #6F79A8;
+    color: white;
+    padding: 5px;
+    text-align: right;
+    clear: both;
+}
+
+h6 {
+    text-align: center;
+}
