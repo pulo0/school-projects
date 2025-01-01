@@ -1,3 +1,6 @@
+const par = document.getElementById("paragraph");
+const checkTerm = document.getElementById("terms");
+
 function resetInput() {
   document.getElementById('name').value = '';
   document.getElementById('lastname').value = '';
@@ -6,8 +9,6 @@ function resetInput() {
 }
 
 function acceptReport() {
-  const par = document.getElementById("paragraph");
-  const checkTerm = document.getElementById("terms");
   const nameUser = document.getElementById("name").value;
   const lastname = document.getElementById("lastname").value;
   const reportDesc = document.getElementById("report").value;
