@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firma IT</title>
-    <link rel="stylesheet" href="styl.css">
-    <link rel="shortcut icon" href="pliki/logo.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="pliki/logo.png" type="image/x-icon" />
+  </head>
+  <body>
     <main class="main-page">
-        <header>
-            <img src="pliki/logo.png" alt="firma it">
-        </header>
-        <nav>
-            <a href="index.html">Strona Główna</a>
-            <a href="uslugi.html">Usługi</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-        <section>
-            <img src="pliki/animacja.gif" alt="Usługi informatyczne">
-        </section>
-        <main class="main-content">
-            <h2>Kontakt</h2>
-            <table>
-                <tr>
-                    <td>
-                        <label for="name">Imię: </label>
-                    </td>
-                    <td>
-                        <input type="text" id="name">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="lastname">Nazwisko: </label>
-                    </td>
-                    <td>
-                        <input type="text" id="lastname">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">E-mail: </label>
-                    </td>
-                    <td>
-                        <input type="email" id="email">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="report">Zgłoszenie: </label>
-                    </td>
-                    <td>
-                        <textarea id="report" rows="10" cols="40"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="checkbox" id="terms">
-                        <label for="terms">Zapoznałam/em się z regulaminem</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <button type="reset" onclick="resetInput()">Resetuj</button>
-                        <button onclick="acceptReport()">Prześlij</button>
-                    </td>
-                </tr>
-            </table>
-            <hr>
-            <p id="paragraph"></p>
-        </main>
-        <footer>
-            <span>Autor strony: <b>pulo0</b></span>
-        </footer>
+      <header>
+        <img src="pliki/logo.png" alt="firma it" />
+      </header>
+      <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <section>
+        <img src="pliki/animacja.gif" alt="Usługi informatyczne" />
+      </section>
+      <main class="main-content">
+        <h2>Kontakt</h2>
+        <table>
+          <tr>
+            <td>
+              <label for="name">Imię: </label>
+            </td>
+            <td>
+              <input type="text" id="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="lastname">Nazwisko: </label>
+            </td>
+            <td>
+              <input type="text" id="lastname" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">E-mail: </label>
+            </td>
+            <td>
+              <input type="email" id="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="report">Zgłoszenie: </label>
+            </td>
+            <td>
+              <textarea id="report" rows="10" cols="40"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" id="terms" />
+              <label for="terms">Zapoznałam/em się z regulaminem</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="reset" onclick="resetInput()">Resetuj</button>
+              <button onclick="acceptReport()">Prześlij</button>
+            </td>
+          </tr>
+        </table>
+        <hr />
+        <p id="paragraph"></p>
+      </main>
+      <footer>
+        <span>Autor strony: <b>pulo0</b></span>
+      </footer>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

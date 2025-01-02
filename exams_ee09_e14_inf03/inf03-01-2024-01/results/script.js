@@ -2,10 +2,10 @@ const par = document.getElementById("paragraph");
 const checkTerm = document.getElementById("terms");
 
 function resetInput() {
-  document.getElementById('name').value = '';
-  document.getElementById('lastname').value = '';
-  document.getElementById('email').value = '';
-  document.getElementById('report').value = '';
+  document.getElementById("name").value = "";
+  document.getElementById("lastname").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("report").value = "";
 }
 
 function acceptReport() {

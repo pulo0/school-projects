@@ -3,32 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firma IT</title>
+    <title>Komputery</title>
     <link rel="stylesheet" href="styl.css" />
-    <link rel="shortcut icon" href="pliki/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="pliki/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <main class="main-page">
       <header>
-        <img src="pliki/logo.png" alt="firma it" />
+        <img src="pliki/animacja.gif" alt="Pogotowie komputerowe" />
       </header>
       <nav>
-        <a href="index.html">Strona Główna</a>
-        <a href="uslugi.html">Usługi</a>
+        <a href="index.html">Strona główna</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
-      <section>
-        <img src="pliki/animacja.gif" alt="Usługi informatyczne" />
-      </section>
-      <main class="main-content">
+      <section class="left-container"></section>
+      <section class="middle-container">
         <h2>Kontakt</h2>
         <table>
           <tr>
             <td>
-              <label for="name">Imię: </label>
+              <label for="name-input">Imię: </label>
             </td>
             <td>
-              <input type="text" id="name" />
+              <input type="text" id="name-input" />
             </td>
           </tr>
           <tr>
@@ -52,29 +49,35 @@
               <label for="report">Zgłoszenie: </label>
             </td>
             <td>
-              <textarea id="report" rows="10" cols="40"></textarea>
+              <select name="report-options" id="report">
+                <option value="naprawa komputerów">naprawa komputerów</option>
+                <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                <option value="wirusy">wirusy</option>
+                <option value="konfiguracja LAN">konfiguracja LAN</option>
+              </select>
             </td>
           </tr>
           <tr>
             <td></td>
             <td>
-              <input type="checkbox" id="terms" />
-              <label for="terms">Zapoznałam/em się z regulaminem</label>
+              <input type="checkbox" id="send-copy" checked />
+              <label for="send-copy">Wyślij kopię wiadomości</label>
             </td>
           </tr>
           <tr>
             <td></td>
             <td>
-              <button type="reset" onclick="resetInput()">Resetuj</button>
-              <button onclick="acceptReport()">Prześlij</button>
+              <button type="reset" onclick="resetForm()">Czyść</button>
+              <button onclick="sendForm()">Wyślij</button>
             </td>
           </tr>
         </table>
         <hr />
         <p id="paragraph"></p>
-      </main>
+      </section>
+      <section class="right-container"></section>
       <footer>
-        <span>Autor strony: <b>pulo0</b></span>
+        <span>Autor: <i>pulo0</i></span>
       </footer>
     </main>
     <script src="script.js"></script>
