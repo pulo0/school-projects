@@ -8,7 +8,7 @@ The entire repository of school projects that I made during school, additionally
 - basic asset/image editing, manipulation using open source program such as InkScape or GIMP
 <br>
 
-Combining this knowledge you have 100% certainty to pass the test and if you have any doubts while taking the previous exams I hope my answers to the will help :> 
+Combining this knowledge you have 100% certainty to pass the test and if you have any doubts while taking the previous exams I hope my answers to them will help :> 
 
 ### Languages in school-project
 
