@@ -1,0 +1,61 @@
+* {
+    font-family: 'Roboto', 'Serif';
+}
+
+header {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+    padding: 10px;
+}
+
+.top-container {
+    background-color: mistyrose;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 50px;
+    border: 1px solid crimson;
+}
+
+.top-container img {
+    float: left;
+    height: 100%;
+}
+
+main section,
+.bottom-container section {
+    background-color: snow;
+    height: 450px;
+    width: 21%;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid crimson;
+    float: left;
+}
+
+.bottom-container {
+    clear: both;
+}
+
+footer {
+    background-color: crimson;
+    color: white;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+h4 {
+    font-size: 180%;
+    text-align: center;
+    color: crimson;
+}
+
+a {
+    color: white;
+}
