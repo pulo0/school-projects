@@ -1,5 +1,5 @@
 ------------ Zapytanie 1 ------------
-SELECT imie, nazwisko 
+SELECT imie, nazwisko, stanowisko 
 -> FROM kadra 
 -> WHERE stanowisko IN ('fryzjer', 'stylista');
 
