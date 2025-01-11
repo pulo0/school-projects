@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Efekty na obrazach</h2>
+    </header>
+    <section class="container-one">
+      <img
+        src="pliki/pszczola.jpg"
+        alt="pszczola na fioletowym kwiatku"
+        id="pszczola"
+      />
+      <br />
+      <input type="radio" name="filters" id="blur" value="blur" />
+      <label for="blur">Blur</label>
+      <br />
+      <input type="radio" name="filters" id="sepia" value="sepia" />
+      <label for="sepia">Sepia</label>
+      <br />
+      <input type="radio" name="filters" id="negatyw" value="negatyw" />
+      <label for="negatyw">Negatyw</label>
+      <br />
+      <button onclick="beeImageEffect()">Zastosuj</button>
+    </section>
+    <section class="container-two">
+      <img src="pliki/pomarancza.jpg" alt="drzewo pomarańczy" id="pomarancza" />
+      <br />
+      <button onclick="orangeColorEffect()">Kolorowy</button>
+      <button onclick="orangeBlackWhiteEffect()">Czarno-biały</button>
+    </section>
+    <section class="container-three">
+      <img src="pliki/owoce.jpg" alt="Kosz pełen owoców" id="owoce" />
+      <input type="range" min="0" max="100" id="range-fruits" value="100" />
+      <br />
+      <button onclick="fruitsImageEffect()">Zastosuj</button>
+    </section>
+    <section class="container-four">
+      <img src="pliki/zolw.jpg" alt="Żółw w wodzie" id="zolw" />
+      <input type="range" min="0" max="250" id="range-turtle" />
+      <br />
+      <button onclick="turtleImageEffect()">Zastosuj</button>
+    </section>
+    <footer>
+      <p>
+        <a href="http://www.css.com/" target="_blank"
+          >Zobacz inne efekty obrazu</a
+        >
+      </p>
+      <p>Stronę wykonał: pulo0</p>
+    </footer>
+
+    <script src="image_effects.js"></script>
+  </body>
+</html>
