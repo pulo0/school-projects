@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formularz rejestracyjny konferencji<em>Nasze Kwiaty</em></h1>
+    </header>
+    <main>
+      <form>
+        <section id="container-one">
+          <h2>Dane osobowe</h2>
+          <input
+            type="text"
+            id="firstname"
+            placeholder="Wpisz imię..."
+            required
+          />
+          <br />
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Wpisz nazwisko..."
+            required
+          />
+          <br />
+          <button onclick="contactInfoAccept()">Następna karta</button>
+        </section>
+        <section id="container-two">
+          <h2>Dane kontaktowe</h2>
+          <input
+            type="email"
+            id="email"
+            placeholder="Twój e-mail..."
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Twój numer telefonu..."
+            required
+          />
+          <button onclick="emailInfoAccept()">Następna karta</button>
+        </section>
+        <section id="container-three">
+          <h2>Hasło do logowania</h2>
+          <input
+            type="password"
+            id="password"
+            placeholder="Podaj hasło"
+            required
+          />
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Powtórz hasło"
+            required
+          />
+          <button onclick="passwordInfoAccept()">Zatwierdź</button>
+        </section>
+      </form>
+    </main>
+    <footer class="footer-one">
+      <video controls>
+        <source src="pliki/motyl.mp4" type="video/mp4" />
+        <p>Przeglądarka nie obsługuje tego formatu</p>
+      </video>
+    </footer>
+    <footer class="footer-two">
+      <h3>Plan konferencji</h3>
+      <table>
+        <tr>
+          <td>9:00 - 12:00</td>
+          <td>Pielęgnacja roślin</td>
+        </tr>
+        <tr>
+          <td>13:00 - 15:00</td>
+          <td>Targi kwiatowe</td>
+        </tr>
+      </table>
+    </footer>
+    <footer class="footer-three">
+      <p><a href="https://kwiaty.pl/">Internetowa kwiaciarnia</a></p>
+    </footer>
+    <footer class="footer-four">
+      <p>Formularz wykonał: pulo0</p>
+    </footer>
+  </body>
+  <script src="login_script.js"></script>
+</html>
