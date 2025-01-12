@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <aside>
+      <img src="pliki/obraz.png" alt="promocje" />
+      <h2>Sprawdź promocje</h2>
+      <table>
+        <tr>
+          <th>co?</th>
+          <th>ile taniej?</th>
+        </tr>
+        <tr>
+          <td>ubrania</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>buty</td>
+          <td>25%</td>
+        </tr>
+      </table>
+    </aside>
+    <header>
+      <h1>Zarejestruj się w sklepie</h1>
+    </header>
+    <main>
+      <button onclick="activate('client')">Klient</button>
+      <button onclick="activate('address')">Adres</button>
+      <button onclick="activate('contact')">Kontakt</button>
+      <section class="client" id="client">
+        <p>Imię</p>
+        <input type="text" id="name-input" placeholder="Wpisz dane..." />
+        <p>Nazwisko</p>
+        <input type="text" id="lastname-input" />
+        <p>Data urodzenia</p>
+        <input type="date" id="date-input" />
+      </section>
+      <section class="address" id="address">
+        <p>Ulica</p>
+        <input type="text" id="street-input" />
+        <p>Numer</p>
+        <input type="number" id="number-input" />
+        <p>Miasto</p>
+        <input type="text" id="city-input" />
+      </section>
+      <section class="contact" id="contact">
+        <p>Numer komórkowy</p>
+        <input type="tel" id="phone-input" />
+        <br>
+        <input type="checkbox" id="rodo-check" />
+        <label for="rodo-check">Akceptuję RODO</label>
+        <br>
+        <button onclick="sendData()">Zatwierdź dane</button>
+      </section>
+    </main>
+    <div class="progress">
+      <section id="bar"></section>
+    </div>
+    <footer>
+      <h4>Rejestrację do sklepu wykonał: pulo0</h4>
+    </footer>
+  </body>
+  <script src="signing_script.js"></script>
+</html>
