@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biuro turystyczne</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Zwiedzamy Polskę</h1>
+    </header>
+    <aside class="left-arrow">
+      <button onclick="changePictureLeftArrow()">&lt;</button>
+    </aside>
+    <main>
+      <img src="pliki/1.jpg" alt="Aktywne zdjęcie" id="image-switcher" />
+    </main>
+    <aside class="right-arrow">
+      <button onclick="changePictureRightArrow()">&gt;</button>
+    </aside>
+    <section>
+      <img src="pliki/1.jpg" alt="Gdańsk" />
+      <img src="pliki/2.jpg" alt="Kraków" />
+      <img src="pliki/3.jpg" alt="Niedzica" />
+      <img src="pliki/4.jpg" alt="Pieniny" />
+      <img src="pliki/5.jpg" alt="Szklarska" />
+      <img src="pliki/6.jpg" alt="Tatry" />
+      <img src="pliki/7.jpg" alt="Wrocław" />
+    </section>
+    <footer>
+      <h3>Autorem galerii jest:</h3>
+      <p>pulo0</p>
+      <a href="https://pixabay.com" target="_blank">Więcej zdjęć</a>
+    </footer>
+  </body>
+  <script src="gallery_script.js"></script>
+</html>
