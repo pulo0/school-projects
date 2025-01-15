@@ -16,7 +16,6 @@ function changePictureLeftArrow() {
   let sourceImage = image.attributes[0].textContent;
   let changedSourceContent = sourceImage.substring(6, 7);
   let parsedSource = parseInt(changedSourceContent);
-  console.log(parsedSource);
   if (changedSourceContent == 1) {
     image.attributes[0].textContent = "pliki/7.jpg";
   } else {
